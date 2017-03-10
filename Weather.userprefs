@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{59134F37-EC84-47F9-999C-D9089E9DACFC}|Default">
   <MonoDevelop.Ide.ItemProperties.Weather.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A4751D0A-242A-42E2-9AE4-979AB3E020C4" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Weather/App.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Weather/Weather.cs">
     <Files>
       <File FileName="Weather/Core.cs" Line="20" Column="46" />
       <File FileName="Weather/CurrentWeather.xaml.cs" Line="22" Column="66" />

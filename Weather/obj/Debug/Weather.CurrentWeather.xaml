@@ -61,7 +61,7 @@
 				<Label Text="Rain:" Grid.Row="5" Grid.Column="0" HorizontalOptions = "End" Margin = "0,0,20,0" />
 				<Image Source="{Binding Rain, Converter={StaticResource rainConverter}}" 
 					   HorizontalOptions = "Start" Grid.Row="5" Grid.Column="1"
-				HeightRequest="30" WidthRequest="30"/>
+					   HeightRequest="30" WidthRequest="30"/>
 
 				<Label Text="Sunrise:" Grid.Row="6" Grid.Column="0" HorizontalOptions = "End" Margin = "0,0,20,0" />
 				<Label Text="{Binding Sunrise}" HorizontalOptions = "Start" Grid.Row="6" Grid.Column="1" FontSize="15" />
