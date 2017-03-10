@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="Weather.CurrentWeather"
+	Title = "Today" 
+	Icon ="ic_place.png"
+	xmlns:weather="clr-namespace:Weather;assembly=Weather">
+	<ContentPage.Resources>
+        <ResourceDictionary>
+            <weather:RainConverter x:Key="rainConverter"></weather:RainConverter>
+        </ResourceDictionary>
+        </ContentPage.Resources>
+	<ContentPage.Content>
+		<StackLayout Orientation = "Vertical" BackgroundColor= "#F2F2F2" >
+
+			
+			<Entry x:Name="cityEntry" Margin ="20,20,20,0" Placeholder="City"> </Entry>
+			<Button Text="Get Weather" BackgroundColor="Aqua" TextColor="Black" Margin="100,0,100,0" Clicked="Handle_Clicked"> </Button>
+			<StackLayout Orientation = "Horizontal" BackgroundColor= "#F2F2F2" >
+				<Label Text="{Binding Title}" VerticalOptions = "Start" HorizontalOptions = "Center" FontSize="20" />
+				<Label Text="," VerticalOptions = "Start" HorizontalOptions = "Center" FontSize="20" />
+				<Label Text="{Binding Country}" VerticalOptions = "Start" HorizontalOptions = "Center" FontSize="20" />
+			</StackLayout>
+
+			
+			<Label Text="{Binding Temperature}" VerticalOptions = "Start" HorizontalOptions = "Center" FontSize="60" />
+
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*" />
+			    	<RowDefinition Height="*" />
+			    	<RowDefinition Height="*" />
+			    	<RowDefinition Height="*" />
+			    	<RowDefinition Height="*" />
+			    	<RowDefinition Height="*" />
+			    	<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+			  	</Grid.RowDefinitions>
+				
+			  	<Grid.ColumnDefinitions>
+				    <ColumnDefinition Width="*" />
+				    <ColumnDefinition Width="*" />
+			  	</Grid.ColumnDefinitions>
+
+				<Label Text="Temp Max:" Grid.Row="0" Grid.Column="0" HorizontalOptions = "End" Margin = "0,0,20,0" />
+				<Label Text="{Binding Temp_max}" HorizontalOptions = "Start" Grid.Row="0" Grid.Column="1" FontSize="15" />
+				
+				<Label Text="Tem Min:" Grid.Row="1" Grid.Column="0" HorizontalOptions = "End" Margin = "0,0,20,0" />
+				<Label Text="{Binding Temp_min}" HorizontalOptions = "Start" Grid.Row="1" Grid.Column="1" FontSize="15" />
+				
+				<Label Text="Visibility:" Grid.Row="2" Grid.Column="0" HorizontalOptions = "End" Margin = "0,0,20,0" />
+				<Label Text="{Binding Visibility}" HorizontalOptions = "Start" Grid.Row="2" Grid.Column="1" FontSize="15" />
+
+				<Label Text="Wind:" Grid.Row="3" Grid.Column="0" HorizontalOptions = "End" Margin = "0,0,20,0" />
+				<Label Text="{Binding Wind}" HorizontalOptions = "Start" Grid.Row="3" Grid.Column="1" FontSize="15" />
+
+				<Label Text="Humidity:" Grid.Row="4" Grid.Column="0" HorizontalOptions = "End" Margin = "0,0,20,0" />
+				<Label Text="{Binding Humidity}" HorizontalOptions = "Start" Grid.Row="4" Grid.Column="1" FontSize="15" />
+
+				<Label Text="Rain:" Grid.Row="5" Grid.Column="0" HorizontalOptions = "End" Margin = "0,0,20,0" />
+				<Image Source="{Binding Rain, Converter={StaticResource rainConverter}}" 
+					   HorizontalOptions = "Start" Grid.Row="5" Grid.Column="1"
+				HeightRequest="30" WidthRequest="30"/>
+
+				<Label Text="Sunrise:" Grid.Row="6" Grid.Column="0" HorizontalOptions = "End" Margin = "0,0,20,0" />
+				<Label Text="{Binding Sunrise}" HorizontalOptions = "Start" Grid.Row="6" Grid.Column="1" FontSize="15" />
+				
+				<Label Text="Sunset:" Grid.Row="7" Grid.Column="0" HorizontalOptions = "End" Margin = "0,0,20,0" />
+				<Label Text="{Binding Sunset}" HorizontalOptions = "Start" Grid.Row="7" Grid.Column="1" FontSize="15" />
+
+
+			</Grid>
+
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
