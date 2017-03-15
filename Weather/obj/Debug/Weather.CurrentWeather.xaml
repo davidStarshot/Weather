@@ -56,13 +56,13 @@
 
 				
 				<Label Grid.Row="5" Grid.Column="0" Text="Rain:" HorizontalOptions="End" Margin="0,0,20,0" />
-				<Image Grid.Row="5" Grid.Column="1" Source="{Binding Rain, Converter={StaticResource rainConverter}}" HorizontalOptions="Start" HeightRequest="30" WidthRequest="30" />
+				<Label Grid.Row="5" Grid.Column="1" Text="{Binding Rain}" HorizontalOptions="Start" FontSize="15" />
 
 				<Label Grid.Row="6" Grid.Column="0" Text="Sunrise:" HorizontalOptions="End" Margin="0,0,20,0" />
-				<Label Grid.Row="6" Grid.Column="1" Text="{Binding Sunrise}" HorizontalOptions="Start" FontSize="15" />
+				<Label Grid.Row="6" Grid.Column="1" Text="{Binding Sunrise, StringFormat='{}{0:HH\\:mm}'}}" HorizontalOptions="Start" FontSize="15" />
 				
 				<Label Grid.Row="7" Grid.Column="0" Text="Sunset:" HorizontalOptions="End" Margin="0,0,20,0" />
-				<Label Grid.Row="7" Grid.Column="1" Text="{Binding Sunset}" HorizontalOptions="Start" FontSize="15" />
+				<Label Grid.Row="7" Grid.Column="1" Text="{Binding Sunset, StringFormat='{}{0:HH\\:mm}'}}" HorizontalOptions="Start" FontSize="15" />
 			</Grid>
 		</StackLayout>
 	</ContentPage.Content>

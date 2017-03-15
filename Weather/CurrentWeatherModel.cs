@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+
 namespace Weather
 {
 	public class CurrentWeatherModel
@@ -24,6 +26,13 @@ namespace Weather
 			Wind = weatherRootObject.wind.speed;
 			Humidity = weatherRootObject.main.humidity;
 			Rain = weatherRootObject.rain == null ? 0 : weatherRootObject.rain.__invalid_name__3h;
+
+			Weather w = weatherRootObject.weather.FirstOrDefault();
+			if (w != null)
+			{
+				Visibility = w.main;
+			}
+
 			DateTime time = new System.DateTime(1970, 1,1,1,0,0);
 			Sunrise = time.AddSeconds(weatherRootObject.sys.sunrise);
 			Sunset = time.AddSeconds(weatherRootObject.sys.sunset);
