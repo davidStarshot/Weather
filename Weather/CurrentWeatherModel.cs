@@ -20,10 +20,11 @@ namespace Weather
 			Title = weatherRootObject.name;
 			Temperature = weatherRootObject.main.temp;
 			Temp_min = weatherRootObject.main.temp_min;
+			Temp_max= weatherRootObject.main.temp_max;
 			Wind = weatherRootObject.wind.speed;
 			Humidity = weatherRootObject.main.humidity;
 			Rain = weatherRootObject.rain == null ? 0 : weatherRootObject.rain.__invalid_name__3h;
-			DateTime time = new System.DateTime(1970, 1, 1, 1, 0, 0, 0);
+			DateTime time = new System.DateTime(1970, 1,1,1,0,0);
 			Sunrise = time.AddSeconds(weatherRootObject.sys.sunrise);
 			Sunset = time.AddSeconds(weatherRootObject.sys.sunset);
 			Country = weatherRootObject.sys.country;

@@ -1,14 +1,11 @@
 ﻿<Properties StartupConfiguration="{59134F37-EC84-47F9-999C-D9089E9DACFC}|Default">
   <MonoDevelop.Ide.ItemProperties.Weather.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A4751D0A-242A-42E2-9AE4-979AB3E020C4" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Weather/Weather.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Weather/CurrentWeatherModel.cs">
     <Files>
-      <File FileName="Weather/Core.cs" Line="20" Column="46" />
-      <File FileName="Weather/CurrentWeather.xaml.cs" Line="22" Column="66" />
-      <File FileName="Weather/DataService.cs" Line="22" Column="19" />
-      <File FileName="Weather/Weather.cs" Line="4" Column="2" />
-      <File FileName="Weather/CurrentWeatherModel.cs" Line="12" Column="16" />
-      <File FileName="Weather/Converters/RainConverter.cs" Line="31" Column="3" />
-      <File FileName="Weather/App.xaml" Line="4" Column="19" />
+      <File FileName="Weather/CurrentWeatherModel.cs" Line="26" Column="4" />
+      <File FileName="Weather/Weather.cs" Line="1" Column="1" />
+      <File FileName="Weather/Converters/RainConverter.cs" Line="1" Column="1" />
+      <File FileName="Weather/CurrentWeather.xaml.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
