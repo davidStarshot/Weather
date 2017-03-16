@@ -23,9 +23,9 @@ namespace Weather
 			Temperature = weatherRootObject.main.temp;
 			Temp_min = weatherRootObject.main.temp_min;
 			Temp_max= weatherRootObject.main.temp_max;
-			Wind = weatherRootObject.wind.speed;
+			Wind = (weatherRootObject.wind.speed * 18) / 5 ;
 			Humidity = weatherRootObject.main.humidity;
-			Rain = weatherRootObject.rain == null ? 0 : weatherRootObject.rain.__invalid_name__3h;
+			Rain = weatherRootObject.rain == null ? 0 : (weatherRootObject.rain.__invalid_name__3h) / 1000;
 
 			Weather w = weatherRootObject.weather.FirstOrDefault();
 			if (w != null)

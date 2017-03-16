@@ -63,7 +63,7 @@
 				<Label Grid.Row="3" Grid.Column="0" Text="Wind speed:" HorizontalOptions="End" Margin="0,0,20,0" />
 				<StackLayout Grid.Row="3" Grid.Column="1" Orientation="Horizontal">
 					<Label Text="{Binding Wind}" FontSize="15" />
-					<Label Text="m/s" VerticalOptions="Center" FontSize="15" />
+					<Label Text="km/h" VerticalOptions="Center" FontSize="15" />
 				</StackLayout>
 				
 				<Label Grid.Row="4" Grid.Column="0" Text="Humidity:" HorizontalOptions="End" Margin="0,0,20,0" />
@@ -75,7 +75,7 @@
 				<Label Grid.Row="5" Grid.Column="0" Text="Rain:" HorizontalOptions="End" Margin="0,0,20,0" />
 				<StackLayout Grid.Row="5" Grid.Column="1" Orientation="Horizontal">
 					<Label Text="{Binding Rain}" FontSize="15" />
-					<Label Text="mm" VerticalOptions="Center" FontSize="15" />
+					<Label Text="L" VerticalOptions="Center" FontSize="15" />
 				</StackLayout>
 
 				<Label Grid.Row="6" Grid.Column="0" Text="Sunrise:" HorizontalOptions="End" Margin="0,0,20,0" />
