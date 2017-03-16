@@ -2,10 +2,12 @@
   <MonoDevelop.Ide.ItemProperties.Weather.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A4751D0A-242A-42E2-9AE4-979AB3E020C4" />
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Weather/CurrentWeather.xaml.cs" Line="1" Column="1" />
+      <File FileName="Weather/CurrentWeather.xaml.cs" Line="18" Column="5" />
+      <File FileName="Weather/CurrentWeatherModel.cs" Line="22" Column="35" />
+      <File FileName="Weather/Weather.cs" Line="22" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
