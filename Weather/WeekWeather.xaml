@@ -7,13 +7,17 @@
 	Icon ="ic_today.png">
 	<ContentPage.Content>
 		
-       	<ListView Margin="10">
-			<ListView.ItemTemplate>
-				<DataTemplate>
-					
-				</DataTemplate>
-			</ListView.ItemTemplate>
-		</ListView>
+<ListView VerticalOptions="StartAndExpand">      
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ImageCell
+                    Text="hola"
+                    Detail = "adeu"
+
+                />
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 
 		
 	</ContentPage.Content>
